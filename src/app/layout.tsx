@@ -32,6 +32,8 @@ export const metadata: Metadata = {
 // this replaces the older method of using <Head> manually on every page
 // values here are used to populate the HTML <head> at build time
 
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,7 +47,9 @@ export default function RootLayout({
                 // you can now use font-family: var(--font-geist-sans) or --font-geist-mono in your css
             >
                 <Providers>
-                    {children}
+                    <Navbar />
+
+                    <main>{children}</main>
                 </Providers>
             </body>
         </html>
