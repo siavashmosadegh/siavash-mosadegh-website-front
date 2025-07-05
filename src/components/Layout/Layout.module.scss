@@ -1,0 +1,27 @@
+.layoutWrapper {
+    .headerWrapper {
+        display: block;
+    }
+
+    .responsiveHeaderWrapper {
+        display: none;
+    }
+
+    .childrenWrapper {
+        //margin-top: 84.5px;
+    }
+
+    @media (max-width: 1100px) {
+        .headerWrapper {
+            display: none;
+        }
+
+        .responsiveHeaderWrapper {
+            display: block;
+        }
+
+        .childrenWrapper {
+            margin-top: 0px;
+        }
+    }
+}
