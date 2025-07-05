@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 // values here are used to populate the HTML <head> at build time
 
 import Navbar from "@/components/Navbar/Navbar";
+import Layout from "@/components/Layout/Layout";
 
 export default function RootLayout({
   children,
@@ -47,9 +48,10 @@ export default function RootLayout({
                 // you can now use font-family: var(--font-geist-sans) or --font-geist-mono in your css
             >
                 <Providers>
-                    <Navbar />
+                    <Layout children={children}/>
+                    {/* <Navbar />
 
-                    <main>{children}</main>
+                    <main>{children}</main> */}
                 </Providers>
             </body>
         </html>

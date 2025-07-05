@@ -5,6 +5,7 @@ import React, { ReactNode } from 'react';
 //import ResponsiveHeader from '../Main/ResponsiveHeader';
 //import Footer from './Footer';
 import styles from './Layout.module.scss';
+import Navbar from '../Navbar/Navbar';
 
 interface LayoutProps {
     children: ReactNode;
@@ -14,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div className={styles.layoutWrapper}>
             <header className={styles.headerWrapper}>
-                {/* <Header /> */}
+                <Navbar />
             </header>
 
             <header className={styles.responsiveHeaderWrapper}>
