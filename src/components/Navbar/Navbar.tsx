@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styles from './Navbar.module.scss';
 
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(true);
+const Navbar: React.FC = () => {
+    const [isOpen, setIsOpen] = useState <Boolean> (true);
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = (): void => setIsOpen(!isOpen);
 
     return (
         <nav className={styles.navbar}>
