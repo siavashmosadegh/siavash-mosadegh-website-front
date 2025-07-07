@@ -23,9 +23,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <ResponsiveHeader />
             </header>
 
-            <main className={styles.childrenWrapper}>
+            <div className={styles.childrenWrapper}>
                 {children}
-            </main>
+            </div>
 
             <footer>
                 {/* <Footer /> */}
