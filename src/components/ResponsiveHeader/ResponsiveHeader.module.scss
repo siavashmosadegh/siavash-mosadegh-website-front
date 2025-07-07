@@ -14,3 +14,23 @@
         margin-left: 30px;
     }
 }
+
+.navLinks {
+    list-style: none;
+    display: block;
+    gap: 1.5rem;
+
+    li {
+        margin-bottom: 5px;
+
+        a {
+            color: rgb(6, 15, 69);
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #58a6ff;
+            }
+        }
+    }
+}
