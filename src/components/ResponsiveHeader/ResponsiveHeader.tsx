@@ -14,7 +14,7 @@ const ResponsiveHeader: React.FC = () => {
     return (
         <div className={styles.wrapper}>
             <Menu
-                color="white"
+                color="yellow"
                 className={styles.icon}
                 onClick={() => handleOpenDrawer()}
             />
