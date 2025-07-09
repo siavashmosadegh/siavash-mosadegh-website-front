@@ -14,6 +14,13 @@ import NginxIcon from "../../../public/icons/NginxIcon";
 import DockerIcon from "../../../public/icons/DockerIcon";
 import MongodbIcon from "../../../public/icons/MongodbIcon";
 import GitIcon from "../../../public/icons/GitIcon";
+import GitlabIcon from "../../../public/icons/GitlabIcon";
+import FirebaseIcon from "../../../public/icons/FirebaseIcon";
+import GithubIcon from "../../../public/icons/GithubIcon";
+import SassIcon from "../../../public/icons/SassIcon";
+import StyledComponentsIcon from "../../../public/icons/StyledComponentsIcon";
+import BootstrapIcon from "../../../public/icons/BootstrapIcon";
+import WebpackIcon from "../../../public/icons/WebpackIcon";
 
 const Skills: React.FC = () => {
     return (
@@ -29,11 +36,19 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className={styles.square}>
+                    CSS
+                </div>
+
+                <div className={styles.square}>
                     <p>Database</p>                
                 </div>
 
                 <div className={styles.square}>
                     <p>Tools</p>
+                </div>
+
+                <div className={styles.square}>
+                    <p>Version Control</p>
                 </div>
 
             </div>
@@ -57,6 +72,14 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className={styles.square}>
+                    <div className={styles.sassIcon}>
+                        <SassIcon />
+
+                        <p>Sass</p>
+                    </div>
+                </div>
+
+                <div className={styles.square}>
                     <div className={styles.postgresqlIcon}>
                         <PostgresqlIcon />
 
@@ -70,6 +93,14 @@ const Skills: React.FC = () => {
 
                         <p>Nginx</p>
                     </div>                    
+                </div>
+
+                <div className={styles.square}>
+                    <div className={styles.gitIcon}>
+                        <GitIcon />
+
+                        <p>Git</p>
+                    </div>
                 </div>
 
             </div>
@@ -93,6 +124,14 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className={styles.square}>
+                    <div className={styles.styledComponentsIcon}>
+                        <StyledComponentsIcon />
+                        
+                        <p>Styled Components</p>
+                    </div>
+                </div>
+
+                <div className={styles.square}>
                     <div className={styles.microsoftSqlServerIcon}>
                         <MicrosoftSqlServerIcon />
 
@@ -105,6 +144,14 @@ const Skills: React.FC = () => {
                         <DockerIcon />
 
                         <p>Docker</p>
+                    </div>
+                </div>
+
+                <div className={styles.square}>
+                    <div className={styles.gitlabIcon}>
+                        <GitlabIcon />
+
+                        <p>Gitlab</p>
                     </div>
                 </div>
 
@@ -127,6 +174,14 @@ const Skills: React.FC = () => {
                         <p>Express.js</p>
                     </div>
                 </div>
+                
+                <div className={styles.square}>
+                    <div className={styles.bootstrapIcon}>
+                        <BootstrapIcon />
+
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
 
                 <div className={styles.square}>
                     <div className={styles.mongodbIcon}>
@@ -137,10 +192,19 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className={styles.square}>
-                    <div className={styles.gitIcon}>
-                        <GitIcon />
+                    <div className={styles.webpackIcon}>
+                        <WebpackIcon />
 
-                        <p>Git</p>
+                        <p>Webpack</p>
+                    </div>
+                </div>
+
+
+                <div className={styles.square}>
+                    <div className={styles.githubIcon}>
+                        <GithubIcon />
+
+                        <p>Github</p>
                     </div>
                 </div>
             </div>
