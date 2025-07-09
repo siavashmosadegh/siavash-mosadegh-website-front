@@ -13,6 +13,14 @@
     justify-content: space-around;
 }
 
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+}
+
 .javascriptIcon {
     svg {
         width: 70px;
@@ -171,6 +179,24 @@
     svg {
         width: 70px;
         height: 70px;
+    }
+    p {
+        margin-top: 5px;
+    }
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gitIcon {
+    svg {
+        width: 70px;
+        height: 70px;
+        path {
+            fill: white;
+        }
     }
     p {
         margin-top: 5px;
