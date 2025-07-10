@@ -135,7 +135,7 @@ const Skills: React.FC = () => {
                     <div className={styles.microsoftSqlServerIcon}>
                         <MicrosoftSqlServerIcon />
 
-                        <p>Microsoft SQL Server</p>
+                        <p>SQL Server</p>
                     </div>                 
                 </div>
 

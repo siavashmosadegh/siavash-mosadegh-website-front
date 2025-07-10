@@ -7,10 +7,10 @@
 
 .row {
     margin-top: 20px;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .square {
@@ -19,6 +19,33 @@
     justify-content: center;
     width: 160px;
     height: 160px;
+    font-weight: bolder;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        width: 120px;
+        height: 120px;
+        svg {
+            width: 40px !important;
+            height: 40px !important;
+        }
+        p {
+            font-size: 12px !important;
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 90px;
+        height: 90px;
+
+        svg {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        p {
+            font-size: 10px !important;
+        }
+    }
 }
 
 .javascriptIcon {
@@ -84,8 +111,8 @@
 
 .nodejsIcon {
     svg {
-        width: 60px;
-        height: 40;
+        width: 70px;
+        height: 70px;
         background-color: white;
     }
     p {
