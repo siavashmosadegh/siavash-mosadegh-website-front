@@ -1,0 +1,94 @@
+// Breakpoint Mixin
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xs {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include respond(sm) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+
+      @include respond(sm) {
+        font-size: 0.95rem;
+        padding: 0.65rem;
+      }
+    }
+
+    span {
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  button {
+    padding: 0.75rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background-color: #0059c1;
+    }
+
+    &:disabled {
+      background-color: #888;
+      cursor: not-allowed;
+    }
+
+    @include respond(sm) {
+      font-size: 0.95rem;
+      padding: 0.65rem;
+    }
+  }
+
+  .success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
