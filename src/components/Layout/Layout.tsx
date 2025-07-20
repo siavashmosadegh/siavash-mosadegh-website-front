@@ -1,9 +1,9 @@
 'use client';
 
 import React, { ReactNode } from 'react';
-//import Header from '../Main/Header';
-//import ResponsiveHeader from '../Main/ResponsiveHeader';
-//import Footer from './Footer';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
+
 import styles from './Layout.module.scss';
 import Navbar from '../Navbar/Navbar';
 import ResponsiveHeader from '../ResponsiveHeader/ResponsiveHeader';
@@ -13,8 +13,15 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+    const theme = useSelector((state: RootState) => state.theme.theme);
+
+    console.log(theme);
+
+    // Combine SCSS class with the theme class (light or dark)
+    const wrapperClassName = `${styles.layoutWrapper} ${theme}`;
+
     return (
-        <div className={styles.layoutWrapper}>
+        <div className={wrapperClassName}>
             <header className={styles.headerWrapper}>
                 <Navbar />
             </header>
@@ -23,13 +30,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <ResponsiveHeader />
             </header>
 
-            <div className={styles.childrenWrapper}>
-                {children}
-            </div>
+            <div className={styles.childrenWrapper}>{children}</div>
 
-            <footer>
-                {/* <Footer /> */}
-            </footer>
+            <footer>{/* <Footer /> */}</footer>
         </div>
     );
 };
