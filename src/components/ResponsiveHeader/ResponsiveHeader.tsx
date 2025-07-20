@@ -3,6 +3,7 @@ import styles from './ResponsiveHeader.module.scss';
 import Drawer from '../Drawer/Drawer';
 import { useState } from 'react';
 import Link from 'next/link';
+import ThemeToggleButton from '../ThemToggleButton/ThemeToggleButton';
 
 const ResponsiveHeader: React.FC = () => {
 
@@ -18,6 +19,8 @@ const ResponsiveHeader: React.FC = () => {
                 className={styles.icon}
                 onClick={() => handleOpenDrawer()}
             />
+
+            <ThemeToggleButton />
 
             <Drawer
                 isOpen={drawerIsOpen}
