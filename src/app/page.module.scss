@@ -15,7 +15,7 @@
 .name {
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  // color: white;
   margin-top: 100px;
 
   @media (max-width: 600px) {
@@ -26,7 +26,7 @@
 .title {
   font-size: 1.75rem;
   font-weight: 400;
-  color: white;
+  // color: white;
   margin-top: 50px;
 
   @media (max-width: 600px) {
@@ -38,7 +38,6 @@
   font-size: 2rem;
   margin-top: 60px;
   cursor: pointer;
-  color: white;
   animation: bounce 1.5s infinite;
 
   &:hover {
